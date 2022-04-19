@@ -5,4 +5,3 @@ Alguns projetos que desenvolvi para aprendizado de javascript;
 
 2.projeto: carrossel; 
 
-fiz merda no codigo
