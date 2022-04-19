@@ -1,2 +1,2 @@
 # Vanila-projects
-Projetos javascript;
+Alguns projetos que desenvolvi para aprendizado de javascript;

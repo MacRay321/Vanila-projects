@@ -1,0 +1,154 @@
+*{
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+body{
+
+    position: relative;
+
+}
+
+#section{
+
+    width: -1;
+    height: 100vh;
+    display: flex;
+    gap: 10vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+
+}
+
+#aa{
+
+    font-size: 3rem;
+    position: relative;
+    padding: 10px;
+    color: #686afb;
+    transition: 0.5s ease;
+    border-radius: 5px;
+
+}
+
+#aa::before{
+
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid #686afb;
+    border-left: 5px solid #686afb;
+    transition: 0.5s ease;
+
+}
+
+#aa::after{
+
+    content: "";
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 10px;
+    height: 10px;
+    border-right: 5px solid #686afb;
+    border-bottom: 5px solid #686afb;
+    transition: 0.5s ease;
+
+}
+
+#divsombra{
+
+    box-shadow: 0px 0px 0px #ff8177 inset;
+    transition: 0.5s ease;
+    border-radius: 5px;
+
+}
+
+#aa:hover::after, #aa:hover::before{
+
+    width: 30px;
+    height: 30px;
+
+}
+
+#aa:hover{
+
+    box-shadow: 0px 0px 50px #686afb;
+
+}
+
+#divsombra:hover{
+
+    box-shadow: 500px 0px 0px #ff8177 inset;
+
+}
+
+#quadro{
+
+    width: 200px;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 10px;
+
+}
+
+#loading{
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #686afb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#divloading{
+    
+    width: 200px;
+    height: 200px;
+    border: 15px solid #686afb;
+    border-bottom: 15px solid #141414;
+    border-radius: 50%;
+    animation: loading 0.5s linear infinite; 
+
+}
+
+@keyframes loading{
+
+    100%{transform: rotate(360deg)};
+
+}
+
+#lugardap{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+
+}
+
+
+
