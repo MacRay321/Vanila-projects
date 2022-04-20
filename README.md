@@ -5,3 +5,5 @@ Alguns projetos que desenvolvi para aprendizado de javascript;
 
 2.projeto: Carrossel; 
 
+3.projeto: Cronometro;
+
