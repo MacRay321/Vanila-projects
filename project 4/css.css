@@ -1,0 +1,179 @@
+*{
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body{
+
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+}
+
+ul{
+
+    list-style-type: none;
+
+}
+
+li{
+
+    display: inline-block;
+
+}
+
+#ani{
+
+    width: 500px;
+    height: 500px;
+    background-color: #141414;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#ani::before{
+
+    content: "";
+    position: absolute;
+    inset: -10px 140px;
+    background-image: linear-gradient(to bottom, #ff0844 0%, #ffb199 100%);
+    animation: rodar 5s linear infinite;
+    transition: 0.3s linear;
+
+}
+
+#ani:hover::before{
+
+    inset: -50px -50px;
+
+}
+
+#ani::after{
+
+    content: "";
+    position: absolute;
+    inset: 20px;
+    background-color: #141414;
+    border-radius: 50%;
+    
+
+}
+
+@keyframes rodar{
+
+    100%{transform: rotate(360deg)}
+
+}
+
+
+#div{
+
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 80%;
+    margin: auto;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+}
+
+
+#main ul li, a{
+
+    padding: 10px;
+    background-color: #141414;
+    color: white;
+
+}
+
+#btn2{
+
+    position: relative;
+
+}
+
+#btn2::after{
+
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 15px solid #ffb199;
+    border-left: 15px solid #ffb199;
+    transform: rotate(135deg);
+
+}
+
+#btn1{
+
+    position: relative;
+
+}
+
+#btn1::after{
+
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 15px solid #ffb199;
+    border-left: 15px solid #ffb199;
+    transform: rotate(-45deg);
+
+}
+
+#ul{
+
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10vh;
+
+}
+
+#ul li{
+
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px;
+
+}
+
+#ul input{
+
+    display: block;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+#container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
