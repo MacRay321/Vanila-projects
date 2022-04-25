@@ -7,5 +7,9 @@ Alguns projetos que desenvolvi para aprendizado de javascript;
 
 3.projeto: Cronometro;
 
-4.projeto: Buscador de números;
+4.projeto: Buscador de número;
+
+5.projeto: esqueci o que eu fiz;
+
+6.projeto: crud básica sem backend;
 

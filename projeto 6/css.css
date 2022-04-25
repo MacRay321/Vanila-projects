@@ -1,0 +1,219 @@
+*{
+
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+
+    background-color: #141414;
+    position: relative;
+    width: -1;
+    height: 100vh;
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#cursor{
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255,255,255,0.1);
+    position: absolute;
+    border: 2px solid white;
+
+}
+
+#section > div:first-child div input:last-child{
+
+    background-color: #141414;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10%;
+    transition: 0.1s linear;
+    color: #eeeeee;
+    font-size: 2rem;
+
+}
+
+#section > div:first-child div input:last-child:hover{
+
+    background-color: #42F121;
+    color: #141414;
+    box-shadow: 0px 0px 50px #42F121;
+
+}
+
+#main{
+
+    width: -1;
+
+}
+
+#section > div:first-child div input:first-child{
+
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+#section > div:first-child label{
+
+    font-size: 2rem;
+
+}
+
+#section{
+
+    width: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+#section > div:first-child {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#section > div:first-child div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.elemento{
+
+    width: 80vw;
+    height: auto;
+    background-color: #eeeeee;
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+    margin-top: 15px;
+    word-break: break-all;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+}
+
+.elemento a{
+
+    border: 1px solid #141414;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 2px;
+    color: #141414;
+    text-decoration: none;
+    font-size: 1.3rem;
+    grid-row: 1 / span 10;
+
+}
+
+.divelemento{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+#modal{
+
+    position: absolute;
+    inset: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0, 0.5);
+    gap: 10px;
+    display: none;
+    animation: animacao 0.5s linear forwards;
+
+}
+
+#modal input:first-child{
+
+    padding: 30px;
+    width: 90%;
+    border-radius: 5px;
+
+}
+
+#modal input:last-child{
+
+    padding: 10px;
+    border-style: none;
+    font-size: 2rem;
+    background-color: #eeeeee;
+    border-radius: 2px;
+
+}
+
+@keyframes animacao{
+
+    0%{opacity: 0};
+    100%{opacity: 1};
+
+}
+
+#carregamento{
+
+    position: absolute;
+    inset: 0px 0px;
+    background-color: #42F121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#carregar{
+
+    width: 300px;
+    height: 300px;
+    border: 10px solid #42F121;
+    border-top: 10px solid #eeeeee;
+    border-radius: 50%;
+    animation: rodando 1s linear infinite;
+
+}
+
+#porcentagem{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+
+}
+
+@keyframes rodando{
+
+    100%{transform: rotate(360deg)};
+
+}
