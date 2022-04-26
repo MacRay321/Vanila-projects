@@ -1,104 +1,108 @@
 *{
 
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-a{
+#ul > li{
 
-    text-decoration: none;
-    color: white;
-
-}
-
-a:visited, a:link, a:active{
-
-    text-decoration: none;
-    color: white;
+    display: inline-block;
 
 }
 
 body{
 
     background-color: #141414;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.imagens{
-
-    width: 450px;
-    height: 300px;
-    transition: 1s ease;
 
 }
 
 #container{
 
-    width: 460px;
-    height: 300px;
+    width: -1;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#ul{
+
+    list-style-type: none;
     display: flex;
     flex-direction: row;
-    border: 5px solid #eeeeee;
-    margin: auto;
-    overflow: hidden;
-    justify-content: center;
-    border-radius: 30px;
-    position: relative;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
+    transform: translateX(0px);
+    position: relative;
+    transition: 1s ease;
 
 }
 
-#link1{
+#btn1{
 
+    width: 50px;
+    height: 50px;
+    border-top: 20px solid white;
+    border-left: 20px solid white;
+    transform: rotate(-45deg);
     position: absolute;
-    right: 30px;
-    display: inline-block;
+    top: 50%;
+    left: 10px;
+    cursor: pointer;
 
 }
 
-#link2{
+#btn2{
 
+    width: 50px;
+    height: 50px;
+    border-top: 20px solid white;
+    border-right: 20px solid white;
+    transform: rotate(45deg);
     position: absolute;
-    left: 30px;
-    display: inline-block;
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
 
 }
 
+#ul img{
 
-#seta1{
-
-    height: 30px;
-    width: 30px;
-    transform: rotateZ(45deg);
-    border-top: 10px solid #eeeeee;
-    border-right: 10px solid #eeeeee;
+    display: block;
+    max-width: 900px;
+    margin-left: 20px;
 
 }
 
-#seta2{
+@media(max-width: 900px){
 
-    height: 30px;
-    width: 30px;
-    transform: rotateZ(225deg);
-    border-top: 10px solid #eeeeee;
-    border-right: 10px solid #eeeeee;
-}
+    #ul img{
 
-[data-set="falso"]{
+        max-width: 700px;
 
-    display: none;
+    }
 
 }
 
-[data-set="verdadeiro"]{
+@media(max-width: 700px){
 
-    display: inline-block;
+    #ul img{
+
+        max-width: 500px;
+
+    }
 
 }
+
+@media(max-width: 500px){
+
+    #ul img{
+
+        max-width: 300px;
+
+    }
+
+}
+

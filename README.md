@@ -9,7 +9,7 @@ Alguns projetos que desenvolvi para aprendizado de javascript;
 
 4.projeto: Buscador de número;
 
-5.projeto: esqueci o que eu fiz;
+5.projeto: Animar ao scroll;
 
 6.projeto: crud básica sem backend;
 
