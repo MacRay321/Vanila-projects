@@ -19,28 +19,15 @@ body{
 
 }
 
-#cursor {
+#h1{
 
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid white;
-    position: absolute;
-    z-index: 3;
-
-}
-
-#div{
-
-    width: 500px;
-    height: 500px;
-    background-color: #eeeeee;
+   color: #eeeeee;
 
 }
 
 .divq{
 
-    width: 700px;
+    max-width: 700px;
     height: 600px;
     background-color: #eeeeee;
     margin-top: 20px;
@@ -48,40 +35,37 @@ body{
 
 }
 
-.numero{
+#inicial{
 
-    position: relative;
-    animation-name: name;
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    margin-top: 20px;
+    animation: namez 1s linear forwards;
+
+}
+
+.ligado{
+
+    animation-name: namez;
     animation-duration: 1s;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
-    width: 700px;
+    max-width: 700px;
     height: 600px;
     background-color: #eeeeee;
     margin-top: 20px;
 
 }
 
-.numero2{
-
-    animation-name: namez;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    width: 700px;
-    height: 600px;
-    margin-top: 20px;
-    opacity: 1;
-
-}
-
-@keyframes name{
-
-    0%{opacity: 0; left: -50px};
-    100%{opacity: 1; left: 0px;};
-
-}
-
 @keyframes namez{
+
+    0%{opacity: 0};
+    100%{opacity: 1};
+
+}
+
+@keyframes names2{
 
     0%{opacity: 1};
     100%{opacity: 0};
