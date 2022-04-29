@@ -1,0 +1,185 @@
+*{
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+:root{
+
+    --azul: #141414;
+    --fundo: #141414;
+    --fundo2: #141414;
+
+}
+
+a, a:visited, a:link{
+
+    color: var(--fundo);
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+
+body{
+
+    background-color: var(--fundo);
+    height: 100vh;
+    width: -1;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body::selection, a::selection, li::selection, p::selection, h1::selection, div::selection{
+
+    background-color: gold;
+
+}
+
+#input{
+
+    width: 500px;
+    display: inline-block;
+    margin: auto;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+
+#main > h1{
+
+    color: white;
+    font-size: 3rem;
+    margin-top: 5vh;
+    display: block;
+    width: 100%;
+    margin-bottom: 10vh;
+    text-align: center;
+
+}
+
+#ulde{
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    justify-content: left;
+    padding-left: 10px;
+    gap: 30px;
+
+}
+
+#ulde > li img{
+
+    width: 300px;
+    height: 200px;
+    display: block;
+    border-radius: 20px;
+    margin: auto;
+
+} 
+
+#inputs {
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+
+}
+
+#submit{
+
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FAC400;
+    border-style: none;
+
+}
+
+#ulde > li span span{
+
+    color: #FAC400;
+
+}
+
+#ulde > li{
+
+    width: 300px;
+
+}
+
+#ulde > li h1{
+
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#ulde > li p{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+@media (max-width: 1000px){
+
+    #ulde{
+
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 650px){
+
+    #input{
+
+        width: 300px;
+
+    }
+
+    #main > h1{
+
+        font-size: 2rem;
+
+    }
+
+}
+
+@media (max-width: 430px){
+
+    #input{
+
+        width: 200px;
+
+    }
+
+    #main > h1{
+
+        font-size: 2rem;
+
+    }
+
+    #inputs > div {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
