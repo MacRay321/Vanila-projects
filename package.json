@@ -1,0 +1,22 @@
+{
+  "name": "vanila-projects",
+  "version": "1.0.0",
+  "description": "Projetos com javascript puro ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacRay321/Vanila-projects.git"
+  },
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "Brenno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MacRay321/Vanila-projects/issues"
+  },
+  "homepage": "https://github.com/MacRay321/Vanila-projects#readme"
+}

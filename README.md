@@ -13,3 +13,7 @@ Alguns projetos que desenvolvi para aprendizado de javascript;
 
 6.projeto: crud básica sem backend;
 
+7.projeto: Funcionalidade do instagram;
+
+8.projeto: Interação com API do bitcoin;
+
